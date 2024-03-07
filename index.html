@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage, Voyage !</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+      <div class="header__part">
+        <div class="container">
+          <div class="header__flex">
+            <a class="logo" href="">
+              <img class="logo__image" src="img/logo-theme-green.png" alt="">
+              <span class="logo__title">Voyage, Voyage !</span>
+            </a>
+            <div class="menu">
+              <a class="menu__item" href=""><i class="icon-heart"></i> Favoris</a>
+              <a class="menu__item" id= 'newsletterButton' href=""><i class="icon-mail"></i> Newsletter</a>
+              <a class="menu__item" href=""><i class="icon-check-circle"></i> Avis</a>
+              <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème"><i class="icon-moon"></i></button>
+              <div class="menu__color-switcher">
+                <button id="theme-green" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+                <button id="theme-red" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+                <button id="theme-blue" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__part">
+        <div class="container">
+          <div class="submenu">
+            <a class="submenu__item submenu__item--current" href="">Voyages</a>
+            <a class="submenu__item" href="">Restaurants</a>
+            <a class="submenu__item" href="">Hôtels</a>
+            <a class="submenu__item" href="">Vols</a>
+            <a class="submenu__item" href="">Croisières</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="content">
+      <h1 class="content__title test">Toutes les destinations à portée de clic</h1>
+
+      <section class="slider">
+        <button class="btn slider__btn" id="previous" type="button" aria-label="Précédent">&lt;</button>
+        <button class="btn slider__btn" id="next" type="button" aria-label="Suivant">&gt;</button>
+      </section>
+
+      <section class="segment">
+        <h2 class="segment__title">Destinations</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/canyon.jpg" alt="">
+              <h3 class="card__title">Partir à l'aventure</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/city.jpg" alt="">
+              <h3 class="card__title">Partir à l'étranger</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/nature.jpg" alt="">
+              <h3 class="card__title">Promenade dans la nature</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/ocean.jpg" alt="">
+              <h3 class="card__title">Partir à la mer</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/road.jpg" alt="">
+              <h3 class="card__title">Road trip</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/ski.jpg" alt="">
+              <h3 class="card__title">Partir à la montagne</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <aside class="newsletter">
+    <button class="newsletter__close btn" aria-zlabel="Fermer" type="button">&Cross;</button>
+    <h2 class="newsletter__title">Inscription à la newsletter</h2>
+    <form action="" method="post">
+      <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com" aria-label="Votre email">
+      <button class="btn" type="submit">Valider</button>
+    </form>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Toute ressemblance avec d'autres contenus est purement fortuite.</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="js/colortheme.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/newsletter.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
