@@ -1,10 +1,10 @@
-//MINI BONUS pour nous ajouter un click et changer le thème // 
+//Changement de thèmes// 
 
 const theme = {
 
     init : function( )
     {
-        const lune = document.querySelector('.icon-moon');//ici j'ai mis une class
+        const lune = document.querySelector('.icon-moon');//ici j'ai mis une classe
         lune.addEventListener ('click', theme.changeTheme);
     },
 
@@ -24,7 +24,7 @@ changeTheme ()
         body.classList.add('theme-dark');
     }
 
-    //Methode avec toggle : Ici toogle permet de cibler si une class existe, et si c'est le cas ne fait rien, en revanche si elle est absente des class de la liste, il va la rajouter. EN gros, on aurait pu juste mettre cette ligne pour faire notre action  (et virer le if)
+    //Methode avec toggle : Ici toogle permet de cibler si une class existe, et si c'est le cas ne fait rien, en revanche si elle est absente des class de la liste, il va la rajouter. EN gros, on aurait pu juste mettre cette ligne pour faire notre action  (et supprimer le if)
     // body.classList.toggle('theme-dark');
 }
 };

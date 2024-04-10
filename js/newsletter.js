@@ -3,14 +3,16 @@ const newsletter = {
     init: function() {
 
         // Recuperer tous les elements necessaires a la gestion de la newsletter (querySelector)
-        // Selectionner le lien newsletter du menu
+        // Récupérer l'id correspondant à la newsletter du menu
         const newsletterButton = document.querySelector('#newsletterButton');
-        // Associer a chacun de ces elements le bon evenements ('click', 'submit')
+        // Associer à chacun de ces elements le bon evenement ('click', 'submit')
+        
         // Ajouter un evenement au click sur ce lien
         newsletterButton.addEventListener('click', newsletter.handleNewsletter);
 
         // Selectionner la croix de l'encart newsletter
         const crossNewsletterClose = document.querySelector('.newsletter__close');
+
         // Ajouter un evenement au click sur la croix
         crossNewsletterClose.addEventListener('click', newsletter.handleNewsletterClose);
 
@@ -38,18 +40,17 @@ const newsletter = {
         // Supprimer la classe newsletter--on pour la faire disparaitre
         newsletter.classList.remove('newsletter--on');
     },
-        // La fonction qui sera appellee lors que le formulaire sera soumis
+        // La fonction qui sera appelée lorsque le formulaire sera soumis
     handleFormSubmit: function (event) {
-        // On recupere la valeur de l'email entree par l'utilisateur
+        // On recupere la valeur de l'email entré par l'utilisateur
         const input = document.querySelector('#subscriber-email');
         const userEmail = input.value;
-
 
             // Et verifier si l'adresse de l'utilisateur contient un de ces domaines interdits    
             if (!newsletter.isEmailValid(userEmail)) {
                 event.preventDefault();
                 const newsletter = document.querySelector('.newsletter');
-                messages.add('Ceci n est pas une adresse autorisee', newsletter);
+                messages.add('Ce n\'est pas une adresse autorisée', newsletter);
             }
         
     },

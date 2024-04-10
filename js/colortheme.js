@@ -21,65 +21,63 @@ const colortheme = {
         const iscolor = JSON.parse(iscolorlocalstorage);
         //ici je viens ajouter ma class dans le body
         document.body.classList.add(iscolor);
-
-
     },
 
 
-buttonGreen ()
-{
-    const body = document.querySelector('body');
-    body.classList.remove('theme-blue')
-    body.classList.remove('theme-red')
-    body.classList.add('theme-green')
-    //ici on vient changer la source de l'image pour qu'a chaque clic on ajoute le logo png de la bonne couleur
-    const logocolor= document.querySelector('.logo__image');
-    logocolor.src = 'img/logo-theme-green.png';
+    buttonGreen ()
+    {
+        const body = document.querySelector('body');
+        body.classList.remove('theme-blue')
+        body.classList.remove('theme-red')
+        body.classList.add('theme-green')
+        //ici on vient changer la source de l'image pour qu'a chaque clic on ajoute le logo png de la bonne couleur
+        const logocolor= document.querySelector('.logo__image');
+        logocolor.src = 'img/logo-theme-green.png';
 
-    //STOCKAGE DANS LE LOCALSTORAGE 
+        //STOCKAGE DANS LE LOCALSTORAGE 
 
-    const colortheme = 'theme-green';
-    const colorthemeforlocalstorage = JSON.stringify(colortheme)
-    // On veut maintenant stocker la valeur transformer en JSON dans le localStorage (set= mettre quelque part). On définira la clé ici isgreen, et la valeur qu'on a transformé précedemment en JSON
-    localStorage.setItem ('colortheme', colorthemeforlocalstorage)
-},
-
-buttonRed ()
-{
-    const body = document.querySelector('body');
-    body.classList.remove('theme-green')
-    body.classList.remove('theme-blue')
-    body.classList.add('theme-red')
-
-    const logocolor= document.querySelector('.logo__image');
-    logocolor.src = 'img/logo-theme-red.png';
-
-    const colortheme = 'theme-red';
-    const colorthemeforlocalstorage = JSON.stringify(colortheme)
-    // On veut maintenant stocker la valeur transformer en JSON dans le localStorage (set= mettre quelque part). On définira la clé ici isgreen, et la valeur qu'on a transformé précedemment en JSON
-    localStorage.setItem ('colortheme', colorthemeforlocalstorage)
-},
-
-buttonBlue ()
-{
-    const body = document.querySelector('body');
-    body.classList.remove('theme-green')
-    body.classList.remove('theme-red')
-    body.classList.add('theme-blue')
-
-    const logocolor= document.querySelector('.logo__image');
-    logocolor.src = 'img/logo-theme-blue.png';
-
-   //STOCKAGE DANS LE LOCALSTORAGE 
-        const colortheme = 'theme-blue';
+        const colortheme = 'theme-green';
         const colorthemeforlocalstorage = JSON.stringify(colortheme)
         // On veut maintenant stocker la valeur transformer en JSON dans le localStorage (set= mettre quelque part). On définira la clé ici isgreen, et la valeur qu'on a transformé précedemment en JSON
         localStorage.setItem ('colortheme', colorthemeforlocalstorage)
-},
+    },
+
+    buttonRed ()
+    {
+        const body = document.querySelector('body');
+        body.classList.remove('theme-green')
+        body.classList.remove('theme-blue')
+        body.classList.add('theme-red')
+
+        const logocolor= document.querySelector('.logo__image');
+        logocolor.src = 'img/logo-theme-red.png';
+
+        const colortheme = 'theme-red';
+        const colorthemeforlocalstorage = JSON.stringify(colortheme)
+        // On veut maintenant stocker la valeur transformer en JSON dans le localStorage (set= mettre quelque part). On définira la clé ici isgreen, et la valeur qu'on a transformé précedemment en JSON
+        localStorage.setItem ('colortheme', colorthemeforlocalstorage)
+    },
+
+    buttonBlue ()
+    {
+        const body = document.querySelector('body');
+        body.classList.remove('theme-green')
+        body.classList.remove('theme-red')
+        body.classList.add('theme-blue')
+
+        const logocolor= document.querySelector('.logo__image');
+        logocolor.src = 'img/logo-theme-blue.png';
+
+    //STOCKAGE DANS LE LOCALSTORAGE 
+            const colortheme = 'theme-blue';
+            const colorthemeforlocalstorage = JSON.stringify(colortheme)
+            // On veut maintenant stocker la valeur transformer en JSON dans le localStorage (set= mettre quelque part). On définira la clé ici isgreen, et la valeur qu'on a transformé précedemment en JSON
+            localStorage.setItem ('colortheme', colorthemeforlocalstorage)
+    },
 
 
 
-};
+    };
 
 
 

@@ -44,7 +44,7 @@ const previousButton = document.querySelector('#previous');
 const nextButton = document.querySelector('#next');
 
 
-// POur la section if de la function previous, aide des copains Diego et Aubry //
+// POur la section if de la function previous//
 function previous(event)
 {
     event.preventDefault();
@@ -56,6 +56,7 @@ function previous(event)
     slidersImg[actualIndex].classList.remove('slider__img--current')
 
     /*quand on clic, on va aussi ajouter notre class img à notre index 1 */
+    //Décrémentation:
     actualIndex--
 
     if (actualIndex < 0)
@@ -80,6 +81,7 @@ function next(event)
     slidersImg[actualIndex].classList.remove('slider__img--current')
 
     /*quand on clic, on va aussi ajouter notre class img à notre index 1 */
+    //Incrémentation
     actualIndex++
 
     if (actualIndex == slidersImg.length)
